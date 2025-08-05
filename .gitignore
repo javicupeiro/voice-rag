@@ -5,6 +5,7 @@ app.log
 .DS_Store
 *.log
 
+
 data/pdf/*
 data/md/*
 data/document_store/*
@@ -26,3 +27,4 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
