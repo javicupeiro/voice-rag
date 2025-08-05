@@ -1,0 +1,25 @@
+# -- 1. Database Configuration --
+# database:
+#   sql:
+#     path: "data/document_store/documents.db" 
+#   milvus:
+#     host: "localhost"
+#     port: "19530"
+#     collection_name: "pdf_chunks_v1" # Name for the collection in Milvus
+
+# -- 2. Model Configuration --
+models:
+  embedding:
+    name: "sentence-transformers/all-MiniLM-L6-v2" # Info: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+    # Dimension is required for Milvus
+    dimension: 384 
+
+# -- 3. LLM Configuration --
+llm:
+  ollama:
+    host: "http://localhost:11434"
+    model: "granite3.2-vision:latest" # Info: https://ollama.com/library/granite3.2-vision
+
+# -- 4. Prompt Configuration --
+prompts:
+  directory: "src/prompts"
