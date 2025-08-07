@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram id="6TAiVtX3wmoiDkOb27XU" name="VOICE-RAG">
-    <mxGraphModel dx="2478" dy="1811" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2222" dy="2122" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -329,8 +329,14 @@
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-6" value="Llama al método persistir_datos()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1973" y="-59" width="242" height="82" as="geometry" />
         </mxCell>
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UU1U56LPJ-xcwm4XLIvG-7" target="UU1U56LPJ-xcwm4XLIvG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-7" value="BASE: ENPOINT&lt;br&gt;Persistir (ADD DATA)&lt;br&gt;(embedding+Resumenes)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1989" y="-216" width="259" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UU1U56LPJ-xcwm4XLIvG-8" target="UU1U56LPJ-xcwm4XLIvG-18">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-8" value="BASE: ENPOINT&lt;br&gt;Retrieve (GET DATA)&lt;div&gt;(embedding)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2285" y="-218.5" width="259" height="60" as="geometry" />
@@ -403,7 +409,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UU1U56LPJ-xcwm4XLIvG-30" value="LLM" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-30" value="LLM&lt;div&gt;(Genera resumenes)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
           <mxGeometry x="3348" y="-11" width="184" height="96" as="geometry" />
         </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-31" value="Embeddings" style="rounded=1;whiteSpace=wrap;html=1;fontSize=19;" vertex="1" parent="1">
@@ -426,7 +432,7 @@
             <mxPoint x="3491" y="-15" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UU1U56LPJ-xcwm4XLIvG-36" value="imb/table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="UU1U56LPJ-xcwm4XLIvG-35">
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-36" value="img/table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="UU1U56LPJ-xcwm4XLIvG-35">
           <mxGeometry x="-0.2762" y="-2" relative="1" as="geometry">
             <mxPoint x="14" y="19" as="offset" />
           </mxGeometry>

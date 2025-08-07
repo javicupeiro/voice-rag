@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram id="6TAiVtX3wmoiDkOb27XU" name="VOICE-RAG">
-    <mxGraphModel dx="2478" dy="1811" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2783" dy="1704" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -285,7 +285,7 @@
           <mxGeometry x="757" y="-223" width="45" height="45" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-75" value="Servicio LLM&lt;br&gt;&lt;br&gt;&lt;div&gt;1 - Resumenes&lt;/div&gt;&lt;div&gt;2 - Response (Query+Context&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="535.25" y="-584" width="207" height="94" as="geometry" />
+          <mxGeometry x="349" y="-576" width="207" height="94" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-76" value="S1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-243" y="-128" width="38" height="31" as="geometry" />
@@ -297,25 +297,25 @@
           <mxGeometry x="-271" y="-735" width="169" height="126" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-79" value="Servicio Gateway" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-293" y="-581" width="169" height="126" as="geometry" />
+          <mxGeometry x="-271" y="-589" width="169" height="126" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-80" value="Servicio: RAG File Processing&lt;br&gt;(PDF)&lt;br&gt;&lt;br&gt;Pipeline:&lt;br&gt;1- Docling--&amp;gt; chunks&lt;br&gt;2- LLM--&amp;gt;resumenes&lt;br&gt;3- Embedding(resumen chunk)+Original(chunk)--&amp;gt;&lt;br&gt;4- Llamada servicio BBDD" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="17" y="-784" width="430" height="151" as="geometry" />
+          <mxGeometry x="-89" y="-750" width="430" height="151" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-81" value="Servicio BBDD:&lt;br&gt;&lt;br&gt;(CRUD)&lt;br&gt;ChromaDB + SQLite" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="537" y="-693" width="203.5" height="94" as="geometry" />
+          <mxGeometry x="350.75" y="-685" width="203.5" height="94" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-82" value="Speech-To-Text(STT)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="877" y="-693" width="120" height="60" as="geometry" />
+          <mxGeometry x="588.5" y="-652" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-83" value="Text-To-Speech(TTS)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="883.5" y="-592" width="120" height="60" as="geometry" />
+          <mxGeometry x="584" y="-580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-88" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="579" y="-56" width="45" height="45" as="geometry" />
         </mxCell>
         <mxCell id="f8DOyf4mHyi-UcWIC6mE-89" value="Servicio: RAG Retriever&lt;br&gt;&lt;br&gt;Pipeline:&lt;br&gt;Query --&amp;gt; Embedding--&amp;gt;Chunks" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="14" y="-554" width="432" height="155" as="geometry" />
+          <mxGeometry x="-89" y="-596" width="432" height="155" as="geometry" />
         </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-4" value="Servicio BBDD:&lt;br&gt;&lt;br&gt;(CRUD)&lt;br&gt;ChromaDB + SQLite" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2171.25" y="-422" width="203.5" height="94" as="geometry" />
@@ -329,8 +329,14 @@
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-6" value="Llama al método persistir_datos()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1973" y="-59" width="242" height="82" as="geometry" />
         </mxCell>
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UU1U56LPJ-xcwm4XLIvG-7" target="UU1U56LPJ-xcwm4XLIvG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-7" value="BASE: ENPOINT&lt;br&gt;Persistir (ADD DATA)&lt;br&gt;(embedding+Resumenes)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1989" y="-216" width="259" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UU1U56LPJ-xcwm4XLIvG-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="UU1U56LPJ-xcwm4XLIvG-8" target="UU1U56LPJ-xcwm4XLIvG-18">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="UU1U56LPJ-xcwm4XLIvG-8" value="BASE: ENPOINT&lt;br&gt;Retrieve (GET DATA)&lt;div&gt;(embedding)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2285" y="-218.5" width="259" height="60" as="geometry" />

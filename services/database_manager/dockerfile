@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY ./src/requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY ./src ./src
+
+# The data for SQLite and ChromaDB will be stored here.
+VOLUME /app/data
+
+# Adds the working directory to Python's module search path.
+ENV PYTHONPATH=/app
+
+EXPOSE 8000
+
+# It uses 0.0.0.0 to make it accessible from outside the container network
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]

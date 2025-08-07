@@ -1,0 +1,50 @@
+# .dockerignore
+
+# Git
+.git
+.gitignore
+
+# Virtual environments and development dependencies
+.venv/
+uv.lock
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/editor configuration files
+.vscode/
+.idea/
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Project-level config and documentation files
+README.md
+*.drawio
+nginx/
+k8s/
+
+# Local data that will be managed by volumes
+data/
+
+# Experimental notebooks
+notebook/
+
+# Logs and local environment files
+*.log
+.env
+.env.*
+
+# Test files (if stored in a separate folder)
+tests/
+*.test.py
+pytest.ini
+.pytest_cache/
