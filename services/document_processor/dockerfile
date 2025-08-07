@@ -1,0 +1,23 @@
+# Imagen base
+FROM python:3.11-slim
+
+# Crear directorio de trabajo raíz
+WORKDIR /app
+
+# Copiar requirements
+COPY requirements.txt .
+
+# Instalar dependencias
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copiar todo el código (incluyendo src)
+COPY ./src ./src
+
+# Cambiar al directorio src
+WORKDIR /app/src
+
+# Exponer el puerto
+EXPOSE 8000
+
+# Comando para ejecutar la app (dentro de /app/src ahora)
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
